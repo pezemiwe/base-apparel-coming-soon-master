@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans";
+}
+body {
+    height: 100vh;
+    width: 100vw;
+}
+.background {
+    display: flex;
+}
+.txt {
+    width: 70%;
+    background: url("./images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    padding: 60px 200px 60px 200px;
+    /* background-image: linear-gradient(135deg, hsl(0, 0%, 100%),  hsl(0, 100%, 98%));*/
+} 
+.hero2 {
+    display: none;
+}
+.logo {
+    margin-bottom: 130px;
+}
+.slim {
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+.heading {
+    font-size: 65px;
+    letter-spacing: 15px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 70px;
+}
+.body {
+    color: hsl(0, 36%, 70%);
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+.box {
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(212, 192, 192);
+    border-radius: 40px;
+    padding: 20px; 
+    outline: none;      
+}
+.input {
+    position: relative;
+}
+.box::placeholder {
+    color: rgb(212, 192, 192);
+}
+.input.error input {
+    border: 1px solid hsl(0, 93%, 68%);
+}
+.arrow {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    padding: 15px 45px;
+}
+.arrow:active {
+    background: hsl(0, 80%, 86%);
+    box-shadow: 3px 3px 5px 0px hsla(0, 0%, 0%, 0.3) ;
+}
+.logo2 {
+    display: none;
+}
+.alert {
+    visibility: hidden;
+    position: absolute;
+    content: "";
+    top: 13px;
+    right: 110px;
+}
+.input.error .alert {
+    visibility: visible;
+}
+.valid {
+    visibility: hidden;
+    color: hsl(0, 93%, 68%);
+    font-size: 13px;
+    margin: 10px 0 0 30px;
+}
+.input.error .valid {
+    visibility: visible;
+}
+
+
+
+@media screen and (max-width: 375px) {
+.background {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.txt {
+    width: 375px;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    padding: 60px 30px 20px 30px;
+    text-align: center;
+   
+}
+.heading {
+    font-size: 50px;
+    line-height: 50px;
+}
+.logo {
+    display: none;
+    margin-bottom: 70px;
+}
+.hero {
+    display: none;
+}
+.hero2 {
+    display: flex;
+}
+.logo2 {
+    display: flex;
+    padding: 30px;
+}
+.valid {
+    margin: 10px;
+}
+.arrow {
+}
+}
