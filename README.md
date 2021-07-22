@@ -1,5 +1,5 @@
 # Frontend Mentor - Base Apparel coming soon page
-## Url: [https://pezemiwe.github.io/base-apparel-coming-soon-master/](https://pezemiwe.github.io/base-apparel-coming-soon-master/https://pezemiwe.github.io/base-apparel-coming-soon-master/)
+## Url: [https://pezemiwe.github.io/base-apparel-coming-soon-master/](https://pezemiwe.github.io/base-apparel-coming-soon-master/)
 ![Design preview for the Base Apparel coming soon page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
